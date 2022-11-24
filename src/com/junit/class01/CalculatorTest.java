@@ -32,5 +32,25 @@ public class CalculatorTest {
         Assert.assertTrue(message, expectedResults==actualResult);
 
     }
+    @Test
+    public void verifyFirstNumberGreaterThanSecondNumber1() {
+        int expectedResults = 0;
+        int a = 10, b = 5;
+        int actualResult = c.div(b, a);
+        //System.out.println(expectedResults == actualResult);
+        String message = "Expected = " + expectedResults+ " : Actual= " + actualResult;
+        Assert.assertTrue(message, expectedResults==actualResult);
+
+    }
+    @Test
+    public void verifyWhenBothNumbersAreEquals2() {
+        int expectedResults = 1;
+        int a = 10, b = 10;
+        int actualResult = c.div(b, a);
+        //System.out.println(expectedResults == actualResult);
+        String message = "Expected = " + expectedResults+ " : Actual= " + actualResult;
+        Assert.assertTrue(message, expectedResults==actualResult);
+
+    }
 
 }
